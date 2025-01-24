@@ -1,26 +1,30 @@
-import React, { createContext, useState } from "react";
+/* eslint-disable react/prop-types */
+import { createContext, useState } from "react";
 
+// eslint-disable-next-line react-refresh/only-export-components
 export const MenuContext = createContext();
 
 export const MenuProvider = ({ children }) => {
-    // menu state 
-    const [ isClicked, setIsClicked ] = useState(false);
-    // state for the navbars for mobile
-    const [isActive, setIsActive] = useState(false);
+  // menu state
+  const [isClicked, setIsClicked] = useState(false);
+  // state for the navbars for mobile
+  const [isActive, setIsActive] = useState(false);
 
-    const handleMenuClose = () => {
-        setIsClicked(false);
-        setIsActive(false)
-    };
+  const handleMenuClose = () => {
+    setIsClicked(false);
+    setIsActive(false);
+  };
 
+  const toggleMenu = () => {
+    setIsActive(!isActive);
+  };
 
-    const toggleMenu = () => {
-        setIsActive(!isActive)
-    };
-
-    return (
-        <MenuContext.Provider value={{ isClicked, setIsClicked, handleMenuClose, isActive, toggleMenu }}>
-            { children }
-        </MenuContext.Provider>
-    );
+  return (
+    <MenuContext.Provider
+      value={{ isClicked, setIsClicked, handleMenuClose, isActive, toggleMenu }}
+    >
+      {children}
+    </MenuContext.Provider>
+  );
 };
+
