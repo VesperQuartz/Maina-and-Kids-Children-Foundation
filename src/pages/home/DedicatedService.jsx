@@ -2,7 +2,7 @@ import overlayImg from "/assets/10th-Anniversary.png";
 
 const DedicatedService = () => {
   return (
-    <div className="flex justify-center items-center flex-col py-[80px] gap-[10px]">
+    <div className="flex justify-center items-center flex-col py-[50px] gap-[8px]">
       {/* subtitle */}
       <p className="text-[#336699] font-semibold text-xl font-montserrat">
         A decade of impact

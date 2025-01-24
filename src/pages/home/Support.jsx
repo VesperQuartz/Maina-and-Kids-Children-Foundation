@@ -1,6 +1,6 @@
 const Support = () => {
   return (
-    <div className="flex flex-col justify-center items-center px-[100px] py-[70px] mb-[50px] bg-[#c98b04]">
+    <div className="flex flex-col justify-center items-center px-[60px] py-[50px] mb-[30px] bg-[#c98b04]">
       <h3 className="sm:text-[20px] sm:text-center sm:whitespace-nowrap md:text-[55px] md:text-center text-[56px] font-bold flex flex-col items-center text-white">
         <span className="">Ready to Support a Greater Cause</span>
         <span className="">and Make Great Impact?</span>

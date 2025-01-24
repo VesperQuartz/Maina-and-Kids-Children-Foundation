@@ -76,6 +76,30 @@ const Navbar = () => {
         </div>
       </NavLink>
       <div className="s:block sm:block md:block lg:hidden xl:hidden"></div>
+      {/* mobile menu trigger */}
+      <div
+        className="lg:hidden xl:hidden cursor-pointer"
+        onClick={() => {
+          setIsClicked(!isClicked);
+          toggleMenu();
+        }}
+      >
+        <div
+          className={`h-[3px] w-7 rounded-full bg-[#326699] transition-all duration-300 ${
+            isClicked ? "rotate-45 translate-y-[7px]" : ""
+          }`}
+        />
+        <div
+          className={`h-[3px] w-7 rounded-full bg-[#326699] my-[6px] transition-all duration-300 ${
+            isClicked ? "opacity-0" : ""
+          }`}
+        />
+        <div
+          className={`h-[3px] w-7 rounded-full bg-[#326699] transition-all duration-300 ${
+            isClicked ? "-rotate-45 -translate-y-[7px]" : ""
+          }`}
+        />
+      </div>
       {/* nav links desktop*/}
       <ul
         className={`s:hidden sm:hidden md:flex lg:flex xl:flex gap-[60px] text-[#333333] justify-center font-semibold capitalize`}
@@ -173,29 +197,6 @@ const Navbar = () => {
           Join Us
         </li>
       </ul>{" "}
-      {/* mobile view menu tab */}
-      <div
-        onClick={() => {
-          setIsClicked(!isClicked), toggleMenu();
-        }}
-        className="s:flex sm:flex flex-col justify-center items-center lg:hidden xl:hidden md:hidden cursor-pointer gap-[5px]"
-      >
-        <div
-          className={`h-[3px] w-6 bg-[#453838] transition-transform duration-200 rounded-full ${
-            isActive ? "rotate-45 bg-[#326699] translate-y-2" : ""
-          }`}
-        />
-        <div
-          className={`h-[3px] w-6 bg-[#453838] transition-opacity duration-200 rounded-full ${
-            isActive ? "opacity-0 bg-[#326699]" : "opacity-100"
-          }`}
-        />
-        <div
-          className={`h-[3px] w-6 bg-[#453838] transition-transform duration-200 rounded-full ${
-            isActive ? "-rotate-45 bg-[#326699] -translate-y-2" : ""
-          }`}
-        />
-      </div>
     </nav>
   );
 };

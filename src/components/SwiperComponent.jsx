@@ -96,7 +96,6 @@ const SwiperComponent = () => {
               <img
                 className="w-full h-[500px] object-cover md:h-[600px] lg:h-[700px]"
                 src={image}
-                alt="haha"
               />
             </SwiperSlide>
           );

@@ -17,64 +17,64 @@ const MenuBar = () => {
               isClicked ? "translate-x-0" : "translate-x-[-100%]"
             } h-screen w-full fixed top-0 right-0 bg-[#f7faf9] z-30 transition-all duration-200 transform`}
           >
-            <div className="relative h-full">
+            <div className="relative h-full p-6">
               {/* closing icon on menu bar */}
               <div
                 onClick={() => handleMenuClose()}
-                className="s:flex sm:flex flex-col justify-center items-center lg:hidden xl:hidden md:hidden cursor-pointer gap-[5px] absolute right-5 top-8"
+                className="absolute right-6 top-6 cursor-pointer"
               >
-                <div className="h-[3px] w-7 rounded-full rotate-45 bg-[#326699] translate-y-4" />
-                <div className="h-[3px] w-7 rounded-full opacity-0" />
-                <div className="h-[3px] w-7 rounded-full -rotate-45 bg-[#326699] -translate-y-0" />
+                <div className="h-[3px] w-7 rounded-full rotate-45 bg-[#326699] translate-y-[6px]" />
+                <div className="h-[3px] w-7 rounded-full -rotate-45 bg-[#326699]" />
               </div>
               {/* links */}
-              <ul className="flex flex-col gap-6 text-[#453838] font-semibold text-[20px] capitalize mt-[100px] mx-6">
+              <ul className="flex flex-col gap-6 text-[#453838] font-semibold text-[18px] capitalize mt-20">
                 <li
                   onClick={() => {
-                    navigate("/"), handleMenuClose();
+                    navigate("/");
+                    handleMenuClose();
                   }}
-                  className="hover:text-[#326699]"
+                  className="hover:text-[#326699] transition-colors"
                 >
                   home
                 </li>
-                <li className="hover:text-[#326699] flex flex-col gap-4">
-                  <div className="flex items-center gap-2">
+                <li className="hover:text-[#326699] transition-colors">
+                  <div className="flex items-center gap-2 mb-2">
                     causes <IoMdArrowDropdown />
                   </div>
                   <ul className="flex flex-col gap-4 ml-4 text-[16px]">
                     <li
                       onClick={() => {
-                        navigate("/projects#Safe-Net-Ambassadors-Program"),
-                          handleMenuClose();
+                        navigate("/projects#Safe-Net-Ambassadors-Program");
+                        handleMenuClose();
                       }}
-                      className="hover:text-[#326699]"
+                      className="hover:text-[#326699] transition-colors py-2"
                     >
                       Safe Net Ambassador&apos;s Program
                     </li>
                     <li
                       onClick={() => {
-                        navigate("/projects#Almajiri-in-Tech-Initiative"),
-                          handleMenuClose();
+                        navigate("/projects#Almajiri-in-Tech-Initiative");
+                        handleMenuClose();
                       }}
-                      className="hover:text-[#326699]"
+                      className="hover:text-[#326699] transition-colors py-2"
                     >
                       Almajiri in Tech Initiative
                     </li>
                     <li
                       onClick={() => {
-                        navigate("/projects#Empower-Her-Future"),
-                          handleMenuClose();
+                        navigate("/projects#Empower-Her-Future");
+                        handleMenuClose();
                       }}
-                      className="hover:text-[#326699]"
+                      className="hover:text-[#326699] transition-colors py-2"
                     >
                       Empower Her Future
                     </li>
                     <li
                       onClick={() => {
-                        navigate("/projects#Health-Awareness"),
-                          handleMenuClose();
+                        navigate("/projects#Health-Awareness");
+                        handleMenuClose();
                       }}
-                      className="hover:text-[#326699]"
+                      className="hover:text-[#326699] transition-colors py-2"
                     >
                       Health Awareness
                     </li>
@@ -82,41 +82,44 @@ const MenuBar = () => {
                 </li>
                 <li
                   onClick={() => {
-                    navigate("/about"), handleMenuClose();
+                    navigate("/about");
+                    handleMenuClose();
                   }}
-                  className="hover:text-[#326699]"
+                  className="hover:text-[#326699] transition-colors"
                 >
-                  who we are
+                  Who we are
                 </li>
                 <li
                   onClick={() => {
-                    navigate("/girl-child"), handleMenuClose();
+                    navigate("/girl-child");
+                    handleMenuClose();
                   }}
-                  className="hover:text-[#326699]"
+                  className="hover:text-[#326699] transition-colors"
                 >
-                  girl child
+                  Girl Child
                 </li>
                 <li
                   onClick={() => {
-                    navigate("/#join-us"), handleMenuClose();
+                    navigate("/#join-us");
+                    handleMenuClose();
                   }}
-                  className="hover:text-[#326699]"
+                  className="hover:text-[#326699] transition-colors"
                 >
-                  join us
+                  Join Us
                 </li>
               </ul>
               {/* buttons */}
-              <div className="flex flex-col gap-6 mt-8 mx-6">
+              <div className="absolute bottom-10 left-6 right-6 flex flex-col gap-4">
                 <Button
                   content={"donate"}
                   btnStyle={
-                    "bg-[#336699] text-white before:bg-[#0f172a] hover:border-white w-full"
+                    "bg-[#326699] text-white before:bg-[#0f172a] border-white w-full"
                   }
                 />
                 <Button
                   content={"get involved"}
                   btnStyle={
-                    "text-[#453838] before:bg-[#0f172a] hover:text-white hover:border-white w-full"
+                    "before:bg-[#0f172a] text-[#326699] border-[#326699] w-full"
                   }
                 />
               </div>

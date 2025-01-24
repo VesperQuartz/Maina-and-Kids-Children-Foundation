@@ -35,7 +35,7 @@ const Objectives = () => {
   return (
     <div
       id="objectives"
-      className="flex justify-center items-center flex-col sm:px-[16px] sm:py-[25px] md:p-[35px] lg:p-[60px] xl:p-[100px] 2xl:p-[100px] gap-[10px]"
+      className="flex justify-center items-center flex-col sm:px-[16px] sm:py-[20px] md:p-[30px] lg:p-[40px] xl:p-[60px] 2xl:p-[60px] gap-[8px]"
     >
       {/* subtitle */}
       <p className="text-[#336699] font-semibold text-xl capitalize font-montserrat">
@@ -52,7 +52,7 @@ const Objectives = () => {
         intended for them.
       </p>
       {/* grid box */}
-      <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 grid-rows-2 gap-[95px] mt-[50px]">
+      <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 grid-rows-2 gap-[60px] mt-[30px]">
         {data.map((card) => {
           return (
             <div

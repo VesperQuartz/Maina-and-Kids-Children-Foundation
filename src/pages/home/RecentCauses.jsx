@@ -9,7 +9,7 @@ const RecentCauses = () => {
   return (
     <div
       id="recentCauses"
-      className="flex justify-center items-center flex-col sm:px-[20px] sm:py-[25px] md:p-[35px] lg:p-[60px] xl:p-[100px] 2xl:p-[100px]"
+      className="flex justify-center items-center flex-col sm:px-[20px] sm:py-[20px] md:p-[30px] lg:p-[40px] xl:p-[60px] 2xl:p-[60px]"
     >
       {/* subtitle */}
       <p className="font-bold sm:text-base text-xl uppercase tracking-widest text-[#336699]">
@@ -20,7 +20,7 @@ const RecentCauses = () => {
         our most recent causes
       </h3>
       {/* grid box */}
-      <div className="grid sm:grid-cols-1 grid-cols-2 grid-rows-2 sm:mt-[30px] mt-[50px] sm:gap-y-[40px] md:gap-[60px] lg:gap-[80px] xl:gap-[100px] 2xl:gap-[110px]">
+      <div className="grid sm:grid-cols-1 grid-cols-2 grid-rows-2 sm:mt-[20px] mt-[30px] sm:gap-y-[30px] md:gap-[40px] lg:gap-[50px] xl:gap-[60px] 2xl:gap-[60px]">
         {projects.map((project) => {
           return (
             <div

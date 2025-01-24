@@ -48,7 +48,7 @@ const Team = () => {
   return (
     <div
       id="team"
-      className="flex justify-center items-center flex-col xl:p-[100px]"
+      className="flex justify-center items-center flex-col py-[50px] px-[20px] md:px-[30px] lg:px-[40px] xl:px-[50px]"
     >
       {/* heading */}
       <h3 className="sm:text-[30px] sm:text-center sm:whitespace-nowrap md:text-[55px] md:text-center text-[56px] font-extrabold text-[#0F172A]">
@@ -60,7 +60,7 @@ const Team = () => {
         children.
       </p>
       {/* grid box */}
-      <div className="grid sm:grid-cols-2 sm:grid-rows-3 sm:gap-2 grid-cols-3 grid-rows-2 md:gap-[40px] lg:gap-[50px] xl:gap-[54px] 2xl:gap-[60px] sm:mt-[50px] md:mt-[60px] lg:mt-[70px] xl:mt-[80px] 2xl:mt-[100px] sm:mb-10 md:mb-14 md:mx-3">
+      <div className="grid sm:grid-cols-2 sm:grid-rows-3 sm:gap-2 grid-cols-3 grid-rows-2 md:gap-[30px] lg:gap-[40px] xl:gap-[40px] 2xl:gap-[40px] sm:mt-[30px] md:mt-[40px] lg:mt-[40px] xl:mt-[40px] 2xl:mt-[40px] sm:mb-6 md:mb-8">
         {data.map((person) => {
           return (
             <div
