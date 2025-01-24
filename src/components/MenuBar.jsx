@@ -2,6 +2,7 @@ import { useContext } from "react";
 import { MenuContext } from "../context/MenuContext";
 import Button from "./Button";
 import { useNavigate } from "react-router-dom";
+import { IoMdArrowDropdown } from "react-icons/io";
 
 const MenuBar = () => {
   const navigate = useNavigate();
@@ -14,27 +15,78 @@ const MenuBar = () => {
           <section
             className={`${
               isClicked ? "translate-x-0" : "translate-x-[-100%]"
-            } h-screen w-[300px] fixed top-0 right-0 bg-[#f7faf9] z-30 transition-all duration-200 transform shadow-2xl rounded-md`}
+            } h-screen w-full fixed top-0 right-0 bg-[#f7faf9] z-30 transition-all duration-200 transform`}
           >
-            <div className="relative">
+            <div className="relative h-full">
               {/* closing icon on menu bar */}
               <div
                 onClick={() => handleMenuClose()}
-                className="s:flex sm:flex flex-col justify-center items-center lg:hidden xl:hidden md:hidden cursor-pointer gap-[5px] mr-8 absolute right-5 -top-16"
+                className="s:flex sm:flex flex-col justify-center items-center lg:hidden xl:hidden md:hidden cursor-pointer gap-[5px] absolute right-5 top-8"
               >
                 <div className="h-[3px] w-7 rounded-full rotate-45 bg-[#326699] translate-y-4" />
                 <div className="h-[3px] w-7 rounded-full opacity-0" />
                 <div className="h-[3px] w-7 rounded-full -rotate-45 bg-[#326699] -translate-y-0" />
               </div>
               {/* links */}
-              <ul className="flex flex-col gap-6 text-[#453838] font-semibold text-[20px] capitalize mt-[110px] mx-6">
+              <ul className="flex flex-col gap-6 text-[#453838] font-semibold text-[20px] capitalize mt-[100px] mx-6">
+                <li
+                  onClick={() => {
+                    navigate("/"), handleMenuClose();
+                  }}
+                  className="hover:text-[#326699]"
+                >
+                  home
+                </li>
+                <li className="hover:text-[#326699] flex flex-col gap-4">
+                  <div className="flex items-center gap-2">
+                    causes <IoMdArrowDropdown />
+                  </div>
+                  <ul className="flex flex-col gap-4 ml-4 text-[16px]">
+                    <li
+                      onClick={() => {
+                        navigate("/projects#Safe-Net-Ambassadors-Program"),
+                          handleMenuClose();
+                      }}
+                      className="hover:text-[#326699]"
+                    >
+                      Safe Net Ambassador&apos;s Program
+                    </li>
+                    <li
+                      onClick={() => {
+                        navigate("/projects#Almajiri-in-Tech-Initiative"),
+                          handleMenuClose();
+                      }}
+                      className="hover:text-[#326699]"
+                    >
+                      Almajiri in Tech Initiative
+                    </li>
+                    <li
+                      onClick={() => {
+                        navigate("/projects#Empower-Her-Future"),
+                          handleMenuClose();
+                      }}
+                      className="hover:text-[#326699]"
+                    >
+                      Empower Her Future
+                    </li>
+                    <li
+                      onClick={() => {
+                        navigate("/projects#Health-Awareness"),
+                          handleMenuClose();
+                      }}
+                      className="hover:text-[#326699]"
+                    >
+                      Health Awareness
+                    </li>
+                  </ul>
+                </li>
                 <li
                   onClick={() => {
                     navigate("/about"), handleMenuClose();
                   }}
                   className="hover:text-[#326699]"
                 >
-                  about us
+                  who we are
                 </li>
                 <li
                   onClick={() => {
@@ -46,25 +98,25 @@ const MenuBar = () => {
                 </li>
                 <li
                   onClick={() => {
-                    navigate("/"), handleMenuClose();
+                    navigate("/#join-us"), handleMenuClose();
                   }}
                   className="hover:text-[#326699]"
                 >
-                  home
+                  join us
                 </li>
               </ul>
               {/* buttons */}
-              <div className="flex flex-col gap-6 my-10 mx-6">
+              <div className="flex flex-col gap-6 mt-8 mx-6">
                 <Button
                   content={"donate"}
                   btnStyle={
-                    "bg-[#336699] text-white before:bg-[#0f172a] hover:border-white"
+                    "bg-[#336699] text-white before:bg-[#0f172a] hover:border-white w-full"
                   }
                 />
                 <Button
                   content={"get involved"}
                   btnStyle={
-                    "text-[#453838] before:bg-[#0f172a] hover:text-white hover:border-white"
+                    "text-[#453838] before:bg-[#0f172a] hover:text-white hover:border-white w-full"
                   }
                 />
               </div>

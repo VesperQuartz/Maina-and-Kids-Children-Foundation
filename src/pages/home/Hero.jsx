@@ -14,7 +14,7 @@ const Hero = () => {
 
   return (
     <React.Fragment>
-      <div className="relative flex w-full justify-center items-center flex-col">
+      <div className="mt-10 relative flex w-full justify-center items-center flex-col">
         <HeroSwipper />
         <div className="absolute z-10">
           <div className="flex justify-center items-center flex-col py-[100px]">
