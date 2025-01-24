@@ -187,6 +187,135 @@ const Projects = () => {
           />
         </div>
       </div>
+
+      {/* Sister to Sister */}
+      <div className="my-8" id="Sister-to-Sister">
+        <div className="relative">
+          <img src={project1HeroImg} alt="Sister to Sister" />
+          <div className="absolute top-52 w-full">
+            <h1 className="font-bold text-[56px] text-white text-center">
+              Sister to Sister
+            </h1>
+          </div>
+        </div>
+        <div className="grid grid-cols-2 grid-rows-2 justify-center items-center bg-[#f9f9f9] gap-12 px-16 pb-10 pt-20">
+          <img src={Sister} alt="" className="" />
+          <p className="text-xl leading-loose">
+            The Sister to Sister program is a mentor-mentee initiative designed
+            to empower and support young girls through personalized guidance and
+            support. Our experienced mentors work closely with mentees to build
+            their confidence, develop life skills, and create pathways for
+            personal and professional growth.
+          </p>
+          <p className="text-xl leading-loose">
+            Through regular mentoring sessions, workshops, and activities, we
+            help girls navigate challenges, set goals, and work towards
+            achieving their dreams. The program focuses on holistic development,
+            including academic support, career guidance, and personal
+            well-being.
+          </p>
+          <img src={Sister} alt="" />
+        </div>
+        {/* button */}
+        <div className="flex sm:flex-col items-center sm:gap-[15px] md:mt-5 gap-[30px] sm:w-[90%] w-[542px] xl:my-10 xl:justify-center xl:w-full">
+          <Button
+            content={"donate"}
+            btnStyle={
+              "bg-[#326699] text-white before:bg-[#0f172a] border-white"
+            }
+          />
+          <Button
+            content={"get involved"}
+            btnStyle={
+              "before:bg-[#0f172a] text-[#0f172a] hover:text-white border-[#326699]"
+            }
+          />
+        </div>
+      </div>
+
+      {/* Pad a Girl */}
+      <div className="my-8" id="Pad-a-Girl">
+        <div className="relative">
+          <img src={project2HeroImg} alt="Pad a Girl" />
+          <div className="absolute top-52 w-full">
+            <h1 className="font-bold text-[56px] text-white text-center">
+              Pad a Girl
+            </h1>
+          </div>
+        </div>
+        <div className="grid grid-cols-2 justify-center items-center bg-[#f9f9f9] gap-12 px-16 pb-10 pt-20">
+          <img src={Pad} alt="" className="" />
+          <p className="text-xl leading-loose">
+            The Pad a Girl initiative addresses period poverty and promotes
+            menstrual hygiene among young girls in underserved communities. We
+            provide sanitary pads and essential hygiene products while
+            conducting educational workshops on reproductive health and personal
+            hygiene. This program ensures that girls don't miss school or face
+            health risks due to lack of access to proper menstrual care
+            products.
+          </p>
+        </div>
+        {/* button */}
+        <div className="flex sm:flex-col items-center sm:gap-[15px] md:mt-5 gap-[30px] sm:w-[90%] w-[542px] xl:my-10 xl:justify-center xl:w-full">
+          <Button
+            content={"donate"}
+            btnStyle={
+              "bg-[#326699] text-white before:bg-[#0f172a] border-white"
+            }
+          />
+          <Button
+            content={"get involved"}
+            btnStyle={
+              "before:bg-[#0f172a] text-[#0f172a] hover:text-white border-[#326699]"
+            }
+          />
+        </div>
+      </div>
+
+      {/* Policy Making Awareness */}
+      <div className="my-8" id="Policy-Making-Awareness">
+        <div className="relative">
+          <img src={project3HeroImg} alt="Policy Making Awareness" />
+          <div className="absolute top-52 w-full">
+            <h1 className="font-bold text-[56px] text-white text-center">
+              Policy Making Awareness
+            </h1>
+          </div>
+        </div>
+        <div className="grid grid-cols-2 grid-rows-2 justify-center items-center bg-[#f9f9f9] gap-12 px-16 pb-10 pt-20">
+          <img src={Policy} alt="" className="" />
+          <p className="text-xl leading-loose">
+            Our Policy Making Awareness program empowers girls to understand and
+            participate in decision-making processes that affect their lives and
+            communities. Through workshops and practical sessions, we educate
+            girls about their rights, policy-making processes, and advocacy
+            skills.
+          </p>
+          <p className="text-xl leading-loose">
+            The program creates platforms for girls to voice their opinions,
+            engage with community leaders, and contribute to policy discussions.
+            We believe that by involving girls in policy-making processes, we
+            can create more inclusive and effective solutions for community
+            development.
+          </p>
+          <img src={Policy} alt="" />
+        </div>
+        {/* button */}
+        <div className="flex sm:flex-col items-center sm:gap-[15px] md:mt-5 gap-[30px] sm:w-[90%] w-[542px] xl:my-10 xl:justify-center xl:w-full">
+          <Button
+            content={"donate"}
+            btnStyle={
+              "bg-[#326699] text-white before:bg-[#0f172a] border-white"
+            }
+          />
+          <Button
+            content={"get involved"}
+            btnStyle={
+              "before:bg-[#0f172a] text-[#0f172a] hover:text-white border-[#326699]"
+            }
+          />
+        </div>
+      </div>
     </div>
   );
 };

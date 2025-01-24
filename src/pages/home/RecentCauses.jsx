@@ -23,15 +23,22 @@ const RecentCauses = () => {
       <div className="grid sm:grid-cols-1 grid-cols-2 grid-rows-2 sm:mt-[30px] mt-[50px] sm:gap-y-[40px] md:gap-[60px] lg:gap-[80px] xl:gap-[100px] 2xl:gap-[110px]">
         {projects.map((project) => {
           return (
-            <div key={project.id}>
-              <img src={`${project.img}`} alt={`Image ${project.id}`} />
-              <h3 className="font-extrabold text-[32px] text-[#0F172A] my-[10px] md:whitespace-nowrap md:text-[23px]">
+            <div
+              key={project.id}
+              className="sm:flex sm:flex-col sm:items-center md:flex md:flex-col md:items-center"
+            >
+              <img
+                src={`${project.img}`}
+                alt={`Image ${project.id}`}
+                className="sm:w-full md:w-full"
+              />
+              <h3 className="font-extrabold text-[32px] text-[#0F172A] my-[10px] md:whitespace-nowrap md:text-[23px] sm:text-center md:text-center">
                 {project.title}
               </h3>
-              <span className="text-[18px] mb-[25px]">
+              <span className="text-[14px] mb-[25px] sm:text-center md:text-center">
                 {project.description.substring(0, 70) + " ..."}
               </span>
-              <div className="sm:flex sm:justify-center">
+              <div className="sm:flex sm:justify-center md:flex md:justify-center">
                 <button
                   onClick={() => navigate(`${project.link}`)}
                   className="w-[256px] h-[56px] rounded-[8px] border border-[#336699] capitalize p-[16px] ${btnStyle} flex items-center justify-center gap-4 z-[1] relative outline-none overflow-hidden transition-all duration-300 ease-in-out hover-on-button bg-[#336699] text-white before:bg-[#0f172a] hover:border-white mt-4"
