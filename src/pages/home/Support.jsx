@@ -10,7 +10,9 @@ const Support = () => {
         empowering children and girls.
       </p>
       <button className="sm:w-11/12 sm-text-sm w-[528px] h-[56px] rounded-[8px] border border-[#336699] capitalize tracking-widest p-[16px] flex items-center justify-center gap-4 z-[1] relative outline-none overflow-hidden transition-all duration-300 ease-in-out hover-on-button bg-[#336699] text-white before:bg-[#0f172a] hover:border-white">
-        fill our form
+        <a href="https://forms.gle/enFrUh2xQ1VqmP8CA" target="_blank">
+          fill our form
+        </a>
       </button>
     </div>
   );

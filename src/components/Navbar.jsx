@@ -150,7 +150,7 @@ const Navbar = () => {
             </NavLink>
 
             <NavLink
-              to="/#join-us"
+              to="https://forms.gle/enFrUh2xQ1VqmP8CA"
               className={({ isActive }) =>
                 `text-base font-semibold hover:text-[#326699] transition-colors ${
                   isActive ? "text-[#000000]" : "text-[#333333]"
