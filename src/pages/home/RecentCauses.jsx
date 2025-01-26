@@ -6,6 +6,7 @@ import { useNavigate } from "react-router-dom";
 
 const RecentCauses = () => {
   const navigate = useNavigate();
+  console.log(projects);
   return (
     <div
       id="recentCauses"
