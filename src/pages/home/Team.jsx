@@ -1,7 +1,6 @@
 // import images
 import speaker1 from "/assets/speaker1.png";
 import speaker2 from "/assets/speaker1.png";
-import speaker3 from "/assets/speaker1.png";
 import speaker4 from "/assets/speaker4.png";
 import speaker5 from "/assets/speaker5.png";
 import speaker6 from "/assets/speaker6.png";
@@ -16,13 +15,13 @@ const Team = () => {
     },
     {
       id: 2,
-      image: speaker2,
+      image: null,
       speakerName: "Afolabi Joshua Voja",
       speakerPosition: "Program Director",
     },
     {
       id: 3,
-      image: speaker3,
+      image: null,
       speakerName: "Sadeeq A. Nuru",
       speakerPosition: "Finance Manager",
     },
@@ -67,11 +66,13 @@ const Team = () => {
               className="sm:w-[180px] w-[229px] h-[215px] flex flex-col justify-center items-center gap-[10px]"
               key={person.id}
             >
-              <img
-                src={person.image}
-                alt=""
-                className="sm:h-[100px] sm:w-[100px]"
-              />
+              <div className="sm:h-[100px] sm:w-[100px] h-[100px] bg-gray-100 rounded-full">
+                <img
+                  src={person.image}
+                  alt=""
+                  className="sm:h-[100px] sm:w-[100px]"
+                />
+              </div>
               <p className="text-center sm:text-sm text-lg">
                 {person.speakerName}
               </p>
