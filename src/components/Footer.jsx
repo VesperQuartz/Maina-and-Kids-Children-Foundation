@@ -23,37 +23,55 @@ const Footer = () => {
       <div className="md:h-[320px] lg:h-[322px] xl:h-[322px] grid s:grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 py-[48px] gap-[48px]">
         <div className="flex flex-col gap-[25px]">
           <h3 className="font-semibold">navigation</h3>
-          <a href="" className="hover:text-[#0f172a]">
+          <a href="#project" className="hover:text-[#0f172a]">
             causes
           </a>
           <a href="" className="hover:text-[#0f172a]">
             about us
           </a>
-          <a href="" className="hover:text-[#0f172a]">
+          <a href="#girl-child" className="hover:text-[#0f172a]">
             girl child
           </a>
-          <a href="" className="hover:text-[#0f172a]">
+          <a
+            href="mailto:mainaandkids@gmail.com"
+            className="hover:text-[#0f172a]"
+          >
             contact us
           </a>
         </div>
         <div className="flex flex-col gap-[25px]">
           <h3 className="font-semibold">get involved</h3>
-          <a href="" className="hover:text-[#0f172a]">
+          <a
+            href="https://forms.gle/9EgTPzU1tJ9EsDRD6"
+            className="hover:text-[#0f172a]"
+          >
             mentorship
           </a>
-          <a href="" className="hover:text-[#0f172a]">
+          <a
+            href="mailto:mainaandkids@gmail.com"
+            className="hover:text-[#0f172a]"
+          >
             sponsorship
           </a>
-          <a href="" className="hover:text-[#0f172a]">
+          <a
+            href="mailto:mainaandkids@gmail.com"
+            className="hover:text-[#0f172a]"
+          >
             partnership
           </a>
         </div>
         <div className="flex flex-col gap-[25px]">
           <h3 className="font-semibold">donation</h3>
-          <a href="" className="hover:text-[#0f172a]">
+          <a
+            href="mailto:mainaandkids@gmail.com"
+            className="hover:text-[#0f172a]"
+          >
             monthly
           </a>
-          <a href="" className="hover:text-[#0f172a]">
+          <a
+            href="mailto:mainaandkids@gmail.com"
+            className="hover:text-[#0f172a]"
+          >
             yearly
           </a>
         </div>
@@ -69,19 +87,39 @@ const Footer = () => {
           </p>
           {/* social links */}
           <div className="flex text-xl gap-4 s:mb-4 sm:mb-4">
-            <a href="" className="hover:text-[#0f172a]" title="Youtube">
+            <a
+              href="https://youtube.com/@maina_and_kids"
+              className="hover:text-[#0f172a]"
+              title="Youtube"
+            >
               <FaYoutube />
             </a>
-            <a href="" className="hover:text-[#0f172a]" title="Facebook">
+            <a
+              href="https://www.facebook.com/MainaandkidsChildrenFoundation"
+              className="hover:text-[#0f172a]"
+              title="Facebook"
+            >
               <FaFacebookF />
             </a>
-            <a href="" className="hover:text-[#0f172a]" title="Twitter">
+            <a
+              href="https://x.com/Maina_and_kids"
+              className="hover:text-[#0f172a]"
+              title="Twitter"
+            >
               <FaXTwitter />
             </a>
-            <a href="" className="hover:text-[#0f172a]" title="Instagram">
+            <a
+              href="https://www.instagram.com/maina_and_kids"
+              className="hover:text-[#0f172a]"
+              title="Instagram"
+            >
               <FaInstagram />
             </a>
-            <a href="" className="hover:text-[#0f172a]" title="LinkedIn">
+            <a
+              href="https://www.linkedin.com/company/mainaandkids"
+              className="hover:text-[#0f172a]"
+              title="LinkedIn"
+            >
               <FaLinkedinIn />
             </a>
           </div>

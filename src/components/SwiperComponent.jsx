@@ -14,24 +14,6 @@ import port9 from "/assets/images/port9.jpg";
 import port10 from "/assets/images/port10.jpg";
 import port11 from "/assets/images/port11.jpg";
 import port12 from "/assets/images/port12.jpg";
-import port13 from "/assets/images/port13.jpg";
-import port14 from "/assets/images/port14.jpg";
-import port15 from "/assets/images/port15.jpg";
-import port16 from "/assets/images/port16.jpg";
-import port17 from "/assets/images/port17.jpg";
-import port18 from "/assets/images/port18.jpg";
-import port19 from "/assets/images/port19.jpg";
-import port20 from "/assets/images/port20.jpg";
-import port21 from "/assets/images/port21.jpg";
-import port22 from "/assets/images/port22.jpg";
-import port23 from "/assets/images/port23.jpg";
-import port24 from "/assets/images/port24.jpg";
-import port25 from "/assets/images/port25.jpg";
-import port26 from "/assets/images/port26.jpg";
-import port27 from "/assets/images/port27.jpg";
-import port28 from "/assets/images/port28.jpg";
-import port29 from "/assets/images/port29.jpg";
-import port30 from "/assets/images/port30.jpg";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation } from "swiper/modules";
 
@@ -42,26 +24,8 @@ const SwiperComponent = () => {
     port10,
     port11,
     port12,
-    port13,
-    port14,
-    port15,
-    port16,
-    port17,
-    port18,
-    port19,
     port1,
-    port20,
-    port21,
-    port22,
-    port23,
-    port24,
-    port25,
-    port26,
-    port27,
-    port28,
-    port29,
     port2,
-    port30,
     port3,
     port4,
     port5,

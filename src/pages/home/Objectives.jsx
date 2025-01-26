@@ -35,40 +35,40 @@ const Objectives = () => {
   return (
     <div
       id="objectives"
-      className="flex justify-center items-center flex-col sm:px-[16px] sm:py-[20px] md:p-[30px] lg:p-[40px] xl:p-[60px] 2xl:p-[60px] gap-[8px]"
+      className="w-full flex justify-center items-center flex-col px-4 py-12 lg:px-8 xl:px-12 2xl:px-16"
     >
       {/* subtitle */}
-      <p className="text-[#336699] font-semibold text-xl capitalize font-montserrat">
+      <p className="text-[#336699] font-semibold text-xl capitalize font-montserrat mb-2">
         objectives
       </p>
       {/* bigger text */}
-      <h3 className="sm:text-[32px] text-center md:text-[55px] text-[56px] font-extrabold text-[#0F172A]">
+      <h3 className="text-3xl lg:text-5xl text-center font-extrabold text-[#0F172A] max-w-4xl mb-4">
         Giving Little Children Chances Through{" "}
         <span className="font-bold">;</span>
       </h3>
       {/* sub text only on mobile */}
-      <p className="hidden sm:block text-center text-[#0F172A]">
+      <p className="sm:block md:block lg:hidden xl:hidden 2xl:hidden text-center text-[#0F172A] mb-8">
         Our organization caters to children and girls, we have programs that are
         intended for them.
       </p>
       {/* grid box */}
-      <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 grid-rows-2 gap-[60px] mt-[30px]">
+      <div className="w-full max-w-7xl grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-8 lg:gap-16">
         {data.map((card) => {
           return (
             <div
-              className="flex sm:flex-col sm:items-center md:flex-col sm:gap-y-[15px] md:gap-x-[15px] lg:gap-x-[30px] xl:gap-x-[40px] 2xl:gap-x-[42px] items-center md:mb-3 sm:mb-5"
+              className="flex sm:flex-col md:flex-col lg:flex-row items-start sm:items-center md:items-center lg:items-start gap-6"
               key={card.id}
             >
               <img
                 src={card.icon}
                 alt={`Icon ${card.id}`}
-                className="h-[90px] w-[90px] object-cover"
+                className="w-20 h-20 lg:w-24 lg:h-24 object-contain flex-shrink-0"
               />
-              <div>
-                <h4 className="text-[24px] h-[30px] font-semibold capitalize mb-[20px] sm:text-center md:text-center md:whitespace-nowrap md:text-lg md:my-[10px]">
+              <div className="flex flex-col lg:flex-1">
+                <h4 className="text-xl lg:text-2xl font-semibold capitalize mb-3 sm:text-center md:text-center lg:text-left">
                   {card.title}
                 </h4>
-                <p className="hover:cursor-default before:bg-[#ffe9b7] sm:text-center md:text-center">
+                <p className="text-base text-[#333333] sm:text-center md:text-center lg:text-left">
                   {card.desc}
                 </p>
               </div>

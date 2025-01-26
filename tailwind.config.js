@@ -34,7 +34,7 @@ export default {
             scrollbarWidth: "none",
           },
         },
-        ["responsive", "hover"],
+        ["responsive", "hover"]
       );
     },
   ],
