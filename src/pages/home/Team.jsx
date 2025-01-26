@@ -1,6 +1,5 @@
 // import images
 import speaker1 from "/assets/speaker1.png";
-import speaker2 from "/assets/speaker1.png";
 import speaker4 from "/assets/speaker4.png";
 import speaker5 from "/assets/speaker5.png";
 import speaker6 from "/assets/speaker6.png";
