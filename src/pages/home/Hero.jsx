@@ -1,6 +1,7 @@
 import React from "react";
 import Button from "../../components/Button";
 import { HeroSwipper } from "../../components/HeroSwipper";
+import { Link } from "react-router-dom";
 // import images
 
 const Hero = () => {
@@ -34,10 +35,12 @@ const Hero = () => {
                   "bg-[#326699] text-white before:bg-[#0f172a] border-white"
                 }
               />
-              <Button
-                content={"get involved"}
-                btnStyle={"before:bg-[#0f172a] text-white border-white"}
-              />
+              <Link to="https://forms.gle/enFrUh2xQ1VqmP8CA">
+                <Button
+                  content={"get involved"}
+                  btnStyle={"before:bg-[#0f172a] text-white border-white"}
+                />
+              </Link>
             </div>
           </div>
         </div>

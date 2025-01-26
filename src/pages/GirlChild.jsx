@@ -14,7 +14,7 @@ const GirlChild = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="">
+    <div className="" id="girl-child">
       {/* First Section */}
       <div className="">
         {/* Header 1 */}

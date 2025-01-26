@@ -38,7 +38,7 @@ const SwiperComponent = () => {
   // State to keep track of the current image index
 
   return (
-    <div className="h-full w-[450px] justify-center flex items-center">
+    <div className="w-full h-[600px] justify-center flex items-center">
       <Swiper
         slidesPerView={"auto"}
         spaceBetween={30}

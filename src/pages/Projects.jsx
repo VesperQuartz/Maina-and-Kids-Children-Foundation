@@ -8,6 +8,7 @@ import project1Img from "/assets/project-1.png";
 import project2Img from "/assets/project-2.png";
 import project3Imga from "/assets/project-3-a.png";
 import project3Imgb from "/assets/project-3-b.png";
+import { Link } from "react-router-dom";
 
 const Projects = () => {
   return (
@@ -26,11 +27,15 @@ const Projects = () => {
             </h1>
           </div>
         </div>
-        <div className="max-w-4xl mx-auto px-4 py-16">
+        <div className="max-w-4xl mx-auto px-4 py-8 sm:py-16">
           <div className="flex flex-col items-center gap-8">
-            <div className="flex flex-row justify-center items-center gap-10 md:flex-col">
-              <img src={project1Img} alt="" className="w-[600px] h-auto" />
-              <p className="text-lg text-justify max-w-3xl md:text-center">
+            <div className="flex flex-col lg:flex-row justify-center items-center gap-6 lg:gap-10">
+              <img
+                src={project1Img}
+                alt=""
+                className="w-full lg:w-[600px] h-auto rounded-lg"
+              />
+              <p className="text-base lg:text-lg text-center lg:text-justify max-w-3xl">
                 The Maina & Kids SafeNet Ambassadors Program is an initiative
                 designed to empower Secondary School Students with knowledge on
                 safe and responsible digital practices and also how to use Tech
@@ -40,24 +45,30 @@ const Projects = () => {
                 across Dutse, Jigawa State.
               </p>
             </div>
-            <div className="flex flex-row-reverse justify-center items-center gap-10 md:flex-col">
-              <img src={project1Img} alt="" className="w-[600px] h-auto" />
-              <p className="text-lg text-justify max-w-3xl md:text-center">
+            <div className="flex flex-col lg:flex-row-reverse justify-center items-center gap-6 lg:gap-10">
+              <img
+                src={project1Img}
+                alt=""
+                className="w-full lg:w-[600px] h-auto rounded-lg"
+              />
+              <p className="text-base lg:text-lg text-center lg:text-justify max-w-3xl">
                 The program emphasizes mentorship, interactive sessions, and
                 community engagement, equipping Secondary School Students to
                 advocate for online safety and positively impact their
                 communities.
               </p>
             </div>
-            <div className="flex gap-4 mt-4">
+            <div className="flex flex-col gap-4 mt-4 md:flex-row">
               <Button
                 content="donate"
                 btnStyle="bg-[#326699] text-white before:bg-[#0f172a] border-white"
               />
-              <Button
-                content="get involved"
-                btnStyle="before:bg-[#0f172a] text-[#0f172a] hover:text-white border-[#326699]"
-              />
+              <Link to="https://forms.gle/enFrUh2xQ1VqmP8CA">
+                <Button
+                  content="get involved"
+                  btnStyle="before:bg-[#0f172a] text-[#0f172a] hover:text-white border-[#326699]"
+                />
+              </Link>
             </div>
           </div>
         </div>
@@ -77,11 +88,15 @@ const Projects = () => {
             </h1>
           </div>
         </div>
-        <div className="max-w-4xl mx-auto px-4 py-16">
+        <div className="max-w-4xl mx-auto px-4 py-8 sm:py-16">
           <div className="flex flex-col items-center gap-8">
-            <div className="flex flex-row justify-center items-center gap-10 md:flex-col">
-              <img src={project2Img} alt="" className="w-[500px] h-auto" />
-              <p className="text-lg md:text-center max-w-3xl text-justify">
+            <div className="flex flex-col lg:flex-row justify-center items-center gap-6 lg:gap-10">
+              <img
+                src={project2Img}
+                alt=""
+                className="w-full lg:w-[500px] h-auto rounded-lg"
+              />
+              <p className="text-base lg:text-lg text-center lg:text-justify max-w-3xl">
                 The Almajiri in Tech Initiative is a program aimed at empowering
                 Almajiri students with basic digital literacy skills. In 2024,
                 working with a well-established computer knowledge center in
@@ -95,15 +110,17 @@ const Projects = () => {
               of this pilot program has encouraged us to expand our reach and
               impact in the coming years.
             </p>
-            <div className="flex gap-4 mt-4">
+            <div className="flex flex-col gap-4 mt-4 md:flex-row">
               <Button
                 content="donate"
                 btnStyle="bg-[#326699] text-white before:bg-[#0f172a] border-white"
               />
-              <Button
-                content="get involved"
-                btnStyle="before:bg-[#0f172a] text-[#0f172a] hover:text-white border-[#326699]"
-              />
+              <Link to="https://forms.gle/enFrUh2xQ1VqmP8CA">
+                <Button
+                  content="get involved"
+                  btnStyle="before:bg-[#0f172a] text-[#0f172a] hover:text-white border-[#326699]"
+                />
+              </Link>
             </div>
           </div>
         </div>
@@ -123,11 +140,15 @@ const Projects = () => {
             </h1>
           </div>
         </div>
-        <div className="max-w-4xl mx-auto px-4 py-16">
+        <div className="max-w-4xl mx-auto px-4 py-8 sm:py-16">
           <div className="flex flex-col items-center gap-8">
-            <div className="flex flex-row justify-center items-center gap-10 md:flex-col">
-              <img src={project3Imga} alt="" className="w-[600px] h-auto" />
-              <p className="text-lg md:text-center text-justify max-w-3xl">
+            <div className="flex flex-col lg:flex-row justify-center items-center gap-6 lg:gap-10">
+              <img
+                src={project3Imga}
+                alt=""
+                className="w-full lg:w-[600px] h-auto rounded-lg"
+              />
+              <p className="text-base lg:text-lg text-center lg:text-justify max-w-3xl">
                 Empower Her Future: Street-to-Class is an initiative designed to
                 enroll 50 girls, ages 13-16, who are currently hawking on the
                 streets, back into school. The program aims to provide
@@ -136,9 +157,13 @@ const Projects = () => {
                 development workshops such as sewing and hairdressing.
               </p>
             </div>
-            <div className="flex flex-row-reverse justify-center items-center gap-10 md:flex-col">
-              <img src={project3Imgb} alt="" className="w-[600px] h-auto" />
-              <p className="text-lg text-justify md:text-center max-w-3xl">
+            <div className="flex flex-col lg:flex-row-reverse justify-center items-center gap-6 lg:gap-10">
+              <img
+                src={project3Imgb}
+                alt=""
+                className="w-full lg:w-[600px] h-auto rounded-lg"
+              />
+              <p className="text-base lg:text-lg text-center lg:text-justify max-w-3xl">
                 The project also includes psychosocial support to ease their
                 transition and ensure long-term success. Through this
                 initiative, the girls will gain both an education and practical
@@ -146,15 +171,17 @@ const Projects = () => {
                 encouraged to ensure the program&apos;s sustainability.
               </p>
             </div>
-            <div className="flex gap-4 mt-4">
+            <div className="flex flex-col gap-4 mt-4 md:flex-row">
               <Button
                 content="donate"
                 btnStyle="bg-[#326699] text-white before:bg-[#0f172a] border-white"
               />
-              <Button
-                content="get involved"
-                btnStyle="before:bg-[#0f172a] text-[#0f172a] hover:text-white border-[#326699]"
-              />
+              <Link to="https://forms.gle/enFrUh2xQ1VqmP8CA">
+                <Button
+                  content="get involved"
+                  btnStyle="before:bg-[#0f172a] text-[#0f172a] hover:text-white border-[#326699]"
+                />
+              </Link>
             </div>
           </div>
         </div>
@@ -174,11 +201,15 @@ const Projects = () => {
             </h1>
           </div>
         </div>
-        <div className="max-w-4xl mx-auto px-4 py-16">
+        <div className="max-w-4xl mx-auto px-4 py-8 sm:py-16">
           <div className="flex flex-col items-center gap-8">
-            <div className="flex flex-row justify-center items-center gap-10 md:flex-col">
-              <img src={project1Img} alt="" className="w-[600px] h-auto" />
-              <p className="text-lg md:text-center text-justify max-w-3xl">
+            <div className="flex flex-col lg:flex-row justify-center items-center gap-6 lg:gap-10">
+              <img
+                src={project1Img}
+                alt=""
+                className="w-full lg:w-[600px] h-auto rounded-lg"
+              />
+              <p className="text-base lg:text-lg text-center lg:text-justify max-w-3xl">
                 The Health Awareness Program for mothers who work as cleaners at
                 Abubakar Tafawa Balewa University, Bauchi, was part of our
                 broader commitment to supporting families and creating healthier
@@ -187,9 +218,13 @@ const Projects = () => {
                 and face masks.
               </p>
             </div>
-            <div className="flex flex-row-reverse justify-center items-center gap-10 md:flex-col">
-              <img src={project1Img} alt="" className="w-[600px] h-auto" />
-              <p className="text-lg md:text-center text-justify max-w-3xl">
+            <div className="flex flex-col lg:flex-row-reverse justify-center items-center gap-6 lg:gap-10">
+              <img
+                src={project1Img}
+                alt=""
+                className="w-full lg:w-[600px] h-auto rounded-lg"
+              />
+              <p className="text-base lg:text-lg text-center lg:text-justify max-w-3xl">
                 We not only appreciated their dedication to maintaining clean
                 hostels but also contributed to the well-being of their
                 families. Healthier mothers ensure healthier homes, fostering
@@ -197,15 +232,17 @@ const Projects = () => {
                 uplift children and their communities.
               </p>
             </div>
-            <div className="flex gap-4 mt-4">
+            <div className="flex flex-col gap-4 mt-4 md:flex-row">
               <Button
                 content="donate"
                 btnStyle="bg-[#326699] text-white before:bg-[#0f172a] border-white"
               />
-              <Button
-                content="get involved"
-                btnStyle="before:bg-[#0f172a] text-[#0f172a] hover:text-white border-[#326699]"
-              />
+              <Link to="https://forms.gle/enFrUh2xQ1VqmP8CA">
+                <Button
+                  content="get involved"
+                  btnStyle="before:bg-[#0f172a] text-[#0f172a] hover:text-white border-[#326699]"
+                />
+              </Link>
             </div>
           </div>
         </div>

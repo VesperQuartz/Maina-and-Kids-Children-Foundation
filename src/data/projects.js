@@ -9,7 +9,7 @@ export const projects = [
     heroImg: `${base}/assets/safenet-amb-program.png`,
     projectImg: `${base}/assets/project-1.png`,
     idName: "safenet",
-    link: "/projects#Safe-Net-Ambassadors-Program",
+    link: `/projects#Safe-Net-Ambassadors-Program`,
   },
   {
     id: 2,

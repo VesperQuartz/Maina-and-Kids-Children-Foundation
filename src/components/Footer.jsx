@@ -23,13 +23,16 @@ const Footer = () => {
       <div className="md:h-[320px] lg:h-[322px] xl:h-[322px] grid s:grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 py-[48px] gap-[48px]">
         <div className="flex flex-col gap-[25px]">
           <h3 className="font-semibold">navigation</h3>
-          <a href="#project" className="hover:text-[#0f172a]">
+          <a href="#projects" className="hover:text-[#0f172a]">
             causes
           </a>
           <a href="" className="hover:text-[#0f172a]">
-            about us
+            Who we are
           </a>
-          <a href="#girl-child" className="hover:text-[#0f172a]">
+          <a
+            href="/Maina-and-Kids-Children-Foundation/girl-child#girl-child"
+            className="hover:text-[#0f172a]"
+          >
             girl child
           </a>
           <a

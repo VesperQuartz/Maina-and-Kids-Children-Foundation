@@ -9,8 +9,7 @@ import { Link } from "react-scroll";
 
 const Navbar = () => {
   // getting states from menu context
-  const { isActive, setIsClicked, isClicked, toggleMenu } =
-    useContext(MenuContext);
+  const { setIsClicked, isClicked, toggleMenu } = useContext(MenuContext);
 
   // setting state for dropdown menu
   const [isDropdownHovered, setIsDropDownHovered] = useState(false);
@@ -91,7 +90,7 @@ const Navbar = () => {
                     }}
                     className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-[#326699]"
                   >
-                    Safe Net Ambassador's Program
+                    Safe Net Ambassador&apos;s Program
                   </Link>
                   <Link
                     to="Almajiri-in-Tech-Initiative"
