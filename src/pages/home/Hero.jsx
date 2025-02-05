@@ -2,9 +2,11 @@ import React from "react";
 import Button from "../../components/Button";
 import { HeroSwipper } from "../../components/HeroSwipper";
 import { Link } from "react-router-dom";
+import { Dialog } from "../../components/Dialog";
 // import images
 
 const Hero = () => {
+  const [isOpen, setOpen] = React.useState(false);
   // const [ isScrolled, setIsScrolled ] = useState(false);
 
   // useEffect(() => {
@@ -15,6 +17,7 @@ const Hero = () => {
 
   return (
     <React.Fragment>
+      <Dialog isOpen={isOpen} onClose={() => setOpen(false)} />
       <div className="mt-10 relative flex w-full justify-center items-center flex-col">
         <HeroSwipper />
         <div className="absolute z-10">
@@ -30,6 +33,7 @@ const Hero = () => {
             {/* button */}
             <div className="flex sm:flex-col sm:items-center sm:gap-[15px] md:mt-5 gap-[30px] sm:w-[90%] w-[542px]">
               <Button
+                onclick={() => setOpen(true)}
                 content={"donate"}
                 btnStyle={
                   "bg-[#326699] text-white before:bg-[#0f172a] border-white"

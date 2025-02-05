@@ -9,12 +9,16 @@ import Policy from "/assets/Policy.png";
 import Line from "/assets/Line 2.png";
 import Button from "../components/Button";
 import { useNavigate } from "react-router-dom";
+import { Dialog } from "../components/Dialog";
+import React from "react";
 
 const GirlChild = () => {
   const navigate = useNavigate();
+  const [isOpen, setOpen] = React.useState();
 
   return (
     <div className="" id="girl-child">
+      <Dialog isOpen={isOpen} onClose={() => setOpen(false)} />
       {/* First Section */}
       <div className="">
         {/* Header 1 */}
@@ -211,6 +215,7 @@ const GirlChild = () => {
       <div className="flex sm:flex-col px-[100px] sm:px-[20px] gap-10 justify-center items-center my-20">
         <Button
           content={"Donate"}
+          onclick={() => setOpen(true)}
           btnStyle={
             "bg-[#336699] sm:w-full text-white before:bg-[#0f172a] hover:border-white"
           }

@@ -9,10 +9,14 @@ import project2Img from "/assets/project-2.png";
 import project3Imga from "/assets/project-3-a.png";
 import project3Imgb from "/assets/project-3-b.png";
 import { Link } from "react-router-dom";
+import { Dialog } from "../components/Dialog";
+import React from "react";
 
 const Projects = () => {
+  const [isOpen, setOpen] = React.useState();
   return (
     <div className="w-full">
+      <Dialog isOpen={isOpen} onClose={() => setOpen(false)} />
       {/* project 1 */}
       <div id="Safe-Net-Ambassadors-Program">
         <div className="relative w-full h-[400px]">
@@ -60,6 +64,7 @@ const Projects = () => {
             </div>
             <div className="flex flex-col gap-4 mt-4 md:flex-row">
               <Button
+                onclick={() => setOpen(true)}
                 content="donate"
                 btnStyle="bg-[#326699] text-white before:bg-[#0f172a] border-white"
               />
@@ -113,6 +118,7 @@ const Projects = () => {
             <div className="flex flex-col gap-4 mt-4 md:flex-row">
               <Button
                 content="donate"
+                onclick={() => setOpen(true)}
                 btnStyle="bg-[#326699] text-white before:bg-[#0f172a] border-white"
               />
               <Link to="https://forms.gle/enFrUh2xQ1VqmP8CA">
@@ -174,6 +180,7 @@ const Projects = () => {
             <div className="flex flex-col gap-4 mt-4 md:flex-row">
               <Button
                 content="donate"
+                onclick={() => setOpen(true)}
                 btnStyle="bg-[#326699] text-white before:bg-[#0f172a] border-white"
               />
               <Link to="https://forms.gle/enFrUh2xQ1VqmP8CA">
@@ -235,6 +242,7 @@ const Projects = () => {
             <div className="flex flex-col gap-4 mt-4 md:flex-row">
               <Button
                 content="donate"
+                onclick={() => setOpen(true)}
                 btnStyle="bg-[#326699] text-white before:bg-[#0f172a] border-white"
               />
               <Link to="https://forms.gle/enFrUh2xQ1VqmP8CA">

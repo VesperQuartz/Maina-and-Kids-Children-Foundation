@@ -1,9 +1,13 @@
 import image from "/assets/about-us-img.png";
 import Button from "../components/Button";
+import { Dialog } from "../components/Dialog";
+import React from "react";
 
 const AboutUs = () => {
+  const [isOpen, setOpen] = React.useState();
   return (
     <div className="flex flex-col justify-center items-center text-[#453838]">
+      <Dialog isOpen={isOpen} onClose={() => setOpen(false)} />
       {/* hero section */}
       <div className="md:py-[80px] lg:py-[100px] xl:py-[100px] s:px-[20px] sm:px-[25px] md:px-[40px] lg:px-[60px] xl:px-[70px] flex flex-col items-center gap-y-[64px]">
         <h1 className="text-[#336699] uppercase font-bold s:text-[20px] sm:text-[20px] md:text-[30px] lg:text-[40px] xl:text-[48px]">
@@ -26,6 +30,19 @@ const AboutUs = () => {
           firmly believe that every child deserves a fair chance to reach their
           full potential, regardless of their background or circumstances.
         </p>
+        <div className="flex items-center justify-center relative w-full h-[400px]">
+          <video
+            controls
+            height="auto"
+            className="object-scale-down h-full w-full rounded-[10px]"
+          >
+            <source
+              type="video/mp4"
+              src="/Maina-and-Kids-Children-Foundation/assets/maina_vid.mp4"
+            />
+            Yor browser does not support video
+          </video>
+        </div>
         <p className="tracking-wide leading-9 text-[18px]">
           It was established on the 30th Day of October 2014 by Gambo Maina
           Bawa, started carrying out projects across Jigawa State and then
@@ -69,6 +86,7 @@ const AboutUs = () => {
       <div className="flex s:flex-col sm:flex-col  gap-[30px] xl:w-[542px] mb-[100px]">
         <Button
           content={"donate"}
+          onclick={() => setOpen(true)}
           btnStyle={
             "bg-[#336699] text-white before:bg-[#0f172a] hover:border-white"
           }

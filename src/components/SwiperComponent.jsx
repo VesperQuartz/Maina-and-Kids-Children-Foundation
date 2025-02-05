@@ -58,7 +58,7 @@ const SwiperComponent = () => {
               className="flex items-center justify-center"
             >
               <img
-                className="w-full h-[500px] object-cover md:h-[600px] lg:h-[700px]"
+                className="w-full rounded-[10px] h-[500px] object-cover md:h-[600px] lg:h-[700px]"
                 src={image}
               />
             </SwiperSlide>
