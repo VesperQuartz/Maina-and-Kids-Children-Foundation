@@ -30,19 +30,6 @@ const AboutUs = () => {
           firmly believe that every child deserves a fair chance to reach their
           full potential, regardless of their background or circumstances.
         </p>
-        <div className="flex items-center justify-center relative w-full h-[400px]">
-          <video
-            controls
-            height="auto"
-            className="object-scale-down h-full w-full rounded-[10px]"
-          >
-            <source
-              type="video/mp4"
-              src="/Maina-and-Kids-Children-Foundation/assets/maina_vid.mp4"
-            />
-            Yor browser does not support video
-          </video>
-        </div>
         <p className="tracking-wide leading-9 text-[18px]">
           It was established on the 30th Day of October 2014 by Gambo Maina
           Bawa, started carrying out projects across Jigawa State and then
@@ -53,6 +40,19 @@ const AboutUs = () => {
           effortless to achieve its goals and visions, with over 35 successful
           projects reaching out to thousands of children.
         </p>
+      </div>
+      <div className="flex items-center justify-center relative w-full h-[400px]">
+        <video
+          controls
+          height="auto"
+          className="object-scale-down h-full w-full rounded-[10px]"
+        >
+          <source
+            type="video/mp4"
+            src="/Maina-and-Kids-Children-Foundation/assets/maina_vid.mp4"
+          />
+          Yor browser does not support video
+        </video>
       </div>
       {/* location */}
       <div className="capitalize w-full s:px-4 sm:px-6 md:px-10 lg:px-14 xl:px-24 my-16 flex flex-col gap-8">

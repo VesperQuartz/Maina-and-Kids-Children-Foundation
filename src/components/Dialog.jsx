@@ -71,7 +71,7 @@ export function Dialog({ isOpen, onClose }) {
         </div>
 
         <p className="mb-6 text-center text-gray-600 text-xl">
-          Mama & kids children foundation
+          Maina & Kids Children Foundation
         </p>
 
         <p className="text-center text-sm text-gray-500 text-md">
