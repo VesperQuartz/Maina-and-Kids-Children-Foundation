@@ -42,7 +42,7 @@ const Objectives = () => {
         objectives
       </p>
       {/* bigger text */}
-      <h3 className="text-3xl lg:text-5xl text-center font-extrabold text-[#0F172A] max-w-4xl mb-4">
+      <h3 className="text-3xl lg:text-5xl text-center font-extrabold text-[#0F172A]  mb-4">
         Giving Little Children Chances Through{" "}
         <span className="font-bold">;</span>
       </h3>
